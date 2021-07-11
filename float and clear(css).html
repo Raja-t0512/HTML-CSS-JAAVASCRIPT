@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and clear</title>
+    <link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .item{
+            width: 900px;
+            border: 3px solid purple;
+            margin: 40px auto;
+            background-color: rgb(250 210 230);
+            padding: 7px;
+        }
+        .container {
+            background-color: rgb(226, 159, 159);
+            border: 2px solid rgb(61, 6, 61);
+            margin: 5px;
+            padding: 0px 15px;
+            font-family: 'Otomanopee One', 'sans-serif';
+        }
+        #first{
+            margin-left: 14px;
+            float:left;
+            width: 48%;
+        }
+        #second{
+            float:left;
+            width: 48%;
+        }
+        #third{
+            /* float:left; */
+            width: 99%;
+            clear: both;
+        }
+        p,h3{
+            text-align: justify;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="item">
+        <h1>WELCOME</h1>
+        <div>
+            <div class="container" id="first">
+                <h3>First</h3>
+                <p id="firstpara">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, dolorum et voluptates in
+                    excepturi totam recusandae similique ad assumenda omnis, inventore illo earum. Aut rerum nobis
+                    tenetur cumque architecto exercitationem nisi alias dignissimos autem sed sapiente vero deleniti nam
+                    minima, omnis, quaerat deserunt vel nostrum. Animi tempore nobis aspernatur libero!</p>
+            </div>
+
+            <div class="container" id = "second">
+                <h3>Second</h3>
+                <p id="secondpara">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, dolorum et voluptates in
+                    excepturi totam recusandae similique ad assumenda omnis, inventore illo earum. Aut rerum nobis
+                    tenetur cumque architecto exercitationem nisi alias dignissimos autem sed sapiente vero deleniti nam
+                    minima, omnis, quaerat deserunt vel nostrum. Animi tempore nobis aspernatur libero!</p>
+            </div>
+
+            <div class="container" id= "third">
+                <h3>Third</h3>
+                <p id="thirdpara">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, dolorum et voluptates in
+                    excepturi totam recusandae similique ad assumenda omnis, inventore illo earum. Aut rerum nobis
+                    tenetur cumque architecto exercitationem nisi alias dignissimos autem sed sapiente vero deleniti nam
+                    minima, omnis, quaerat deserunt vel nostrum. Animi tempore nobis aspernatur libero!</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

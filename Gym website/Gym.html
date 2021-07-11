@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajat Fitness</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@700&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Reset  */
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-image: url('gym\ bg.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            /* background-position: center; */
+            background-size: cover;
+            color: white;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+
+        .left {
+            /* border: 2px solid red; */
+            top: 22px;
+            width: 200px;
+            display: inline-block;
+            position: absolute;
+            left: 12px;
+            text-align: center;
+        }
+
+        .left img {
+            height: 54px;
+            width: 69px;
+        }
+        .left h6{
+            margin: -7px;
+            font-size: 14px;
+        }
+
+        .mid {
+            /* border: 2px solid green; */
+            display: block;
+            width: 650px;
+            margin: 10px auto;
+        }
+        .right {
+            /* border: 2px solid yellow; */
+            margin: auto;
+            top: 40px;
+            right: 20px;
+            width: 200px;
+            display: inline-block;
+            position: absolute;
+        }
+        .navbar{
+            display: inline-block;
+            margin-top: 23px;
+        }
+        .navbar li{
+            display: inline-block;
+            padding: 1px 16px;
+            margin: 10px;
+            border: 2px solid white;
+            border-radius: 10px;
+            font-size: 18px
+        }
+        .navbar li a{
+            color: white;
+            text-decoration: none;
+        }
+        .navbar li a:hover,.navbar li a.active{
+            cursor: pointer;
+            color: rgb(158, 158, 158);
+            text-decoration: underline;
+        }
+        .btn{
+            padding: 5px 20px;
+            margin: 2px;
+            border-radius: 20px;
+            border: 1.5px solid white;
+            background-color: black;
+            color: white;
+            font-family: 'Baloo Bhai 2', cursive;
+            font-size: small;
+        }
+        .btn:hover{
+            cursor: pointer;
+        }
+        .form{
+            border: 2px solid white;
+            width: 380px;
+            height: 350px;
+            display: inline-block;
+            margin-top:45px;
+            margin-left: 860px;
+            box-sizing: border-box;
+            border-radius: 30px;
+        }
+        .form h3{
+            margin-bottom: 5px;
+            margin-top: 23px;
+            font-size: 23px;
+            text-align: center;
+        }
+        .formgroup{
+            padding: 6px 97px;
+            margin: 0px 4px;
+        }
+        .formgroup input{
+            padding: 4px 13px;
+            margin: 1px 9px
+        }
+        .formgroup button{
+            margin: 14px -49px;
+            padding: 1px 9px;
+            border-radius: 7%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="left">
+            <img src="logo.png" alt="">
+            <h6>Rajat Fitness</h6>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#" >About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+                <button class="btn">Call us</button>
+                <button class="btn">Email us</button>
+            </div>
+        </div>
+    </header>
+    <div class="form">
+        <h3>Join the best gym of Karnal now!</h3>
+        <form action="noaction.php">
+            <div class="formgroup">
+                <label for="name">Name </label>
+                <input type="text" name="" placeholder="Enter your name">
+                <label for="name">Age </label>
+                <input type="text" name="" placeholder="Enter your name">
+                <label for="name">Sex </label>
+                <input type="text" name="" placeholder="Enter your name">
+                <label for="name">Contact No. </label>
+                <input type="text" name="" placeholder="Enter your name">
+                <button class="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

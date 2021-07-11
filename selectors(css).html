@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors in CSS</title>
+    <style>
+        /* Element Selector */
+        p{
+            color : red
+        }
+        /* class selector */
+        .border{
+            border: 2px solid red;
+        }
+        /* id selector */
+        #firstpara{
+            background-color: rgb(10, 1, 4);
+        }
+        /* Grouping selectors */
+        footer,span{
+            background-color: cyan;
+        }
+    </style>
+</head>
+
+<body>
+    <p>This is a normal paragraph</p>
+
+    <div class="border">
+        <strong>This is made using class selector</strong>
+    </div>
+
+    <p id="firstpara">This is firstpara lector</p>
+    <p id="firstpara" class="border">This is firstpara lector</p>
+
+    <p class="border">This is a para</p>
+    <footer>This is footer</footer>
+    <span>This is a span</span>
+</body>
+</html>

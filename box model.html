@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color:#6f5176;
+        }
+        .container{
+            background-color: rgb(205, 202, 230);
+            border: 3px solid rgb(69, 9, 109);
+            /* We can set padding (top,bottom) (left,right) like this */
+            /*padding: 1px 1px 1px 1px;  /*Padding: top right bottom left*/
+            padding: 7px 15px ; /*Padding: y(top,bottom)  x(left,right)*/
+            margin: 34px;
+            border-radius: 10px;
+            font-size: 15px;
+            width: 450px;
+        }
+        p{
+            padding: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>This is my heading</h2>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla placeat voluptas neque laborum repellat ut. Magni aut molestiae aliquam inventore est, nesciunt, expedita similique corporis facere necessitatibus, reprehenderit maxime quisquam?</p>
+    </div>
+
+    <div class="container">
+        <h2>This is my heading</h2>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla placeat voluptas neque laborum repellat ut. Magni aut molestiae aliquam inventore est, nesciunt, expedita similique corporis facere necessitatibus, reprehenderit maxime quisquam?</p>
+    </div>
+
+    <div class="container">
+        <h2>This is my heading</h2>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla placeat voluptas neque laborum repellat ut. Magni aut molestiae aliquam inventore est, nesciunt, expedita similique corporis facere necessitatibus, reprehenderit maxime quisquam?</p>
+    </div>
+</body>
+</html>
