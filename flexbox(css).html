@@ -26,25 +26,54 @@
             /* flex-wrap: wrap; */
             /* flex-wrap: wrap-reverse; */
 
-            flex-flow: row wrap;
+            /* flex-flow: row wrap; */
 
-            justify-content: center;
+            /* justify-content: center; */
             /* justify-content: space-between; */
             /* justify-content: space-evenly; */
             /* justify-content: space-around; */
 
             /* Used to align items vertically */
-            align-items: center; 
-            align-items: flex-end;
+            /* align-items: center;  */
+            /* align-items: flex-end; */
 
         }
         .items{
-            height: 100px;
-            width: 100px;
+            height: 200px;
+            width: 200px;
             background-color: tomato;
             border: 2px solid green;
             margin: 5px;
             padding: 2px;
+        }
+
+        /* Properties of Flexbox item */
+
+        #item-1{
+
+            /* Higher the order later it shows in the container  */
+            /* order: 2; */
+
+            /* It is used to stretch the item if the size of the screen gets bigger */
+            /* flex-grow: 3; */
+        }
+        #item-2{
+
+            /* flex-grow: 1; */
+            align-self: center;
+        }
+        #item-3{
+
+            /* order: 40; */
+            /* When flex-direction is row then flex-basis controls width */
+            /* When flex-direction is column then flex-basis controls height */
+            flex-basis: 120px;
+        }
+        #item-4{
+
+            /* It is used to shrink the item if the size of the screen decreases */
+            /* flex-shrink: 3; */
+            align-self: flex-end;
         }
     </style>
 </head>

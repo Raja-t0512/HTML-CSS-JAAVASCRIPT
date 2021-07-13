@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+    <style>
+        html
+        {
+            text-align: center;
+        }
+        /* div p{
+            color: whitesmoke;
+            background-color: black;
+            font-weight: bold;
+        } */
+
+        /* Direct next element should be p */
+        /* div>p{
+            color: whitesmoke;
+            background-color: black;
+            font-weight: bold;
+        } */
+
+        /* Next sibling of div should be p  */
+        div+p{
+            color: whitesmoke;
+            background-color: black;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>More on Selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li>List item</li>
+                <p>This is a paragraph</p>
+            </ul>
+        </div>
+        <p>This is another para</p>
+    </div>
+    <p>This is outermost para</p>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        .box
+        {
+            background-color: black;
+            font-size: 100px;
+            text-align: center;
+            color: white;
+            display: none;
+        }
+        @media only screen and (max-width:767px) and (min-width:300px)
+        {
+            #box-1
+            {
+                display: block;
+                background-color: red;
+            }
+        }
+        @media only screen and (max-width:1023px) and (min-width:768px)
+        {
+            #box-2
+            {
+                display: block;
+                background-color: blue;
+            }
+        }
+        @media only screen and (max-width:1366px) and (min-width:1024px)
+        {
+            #box-3
+            {
+                display: block;
+                background-color: green;
+            }
+        }
+        @media only screen and (min-width:1367px)
+        {
+            #box-4
+            {
+                display: block;
+                background-color: black;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box-1">Iphone</div>
+    <div class="box" id="box-2">Ipad</div>
+    <div class="box" id="box-3">Ipad pro</div>
+    <div class="box" id="box-4">PC</div>
+</body>
+</html>
