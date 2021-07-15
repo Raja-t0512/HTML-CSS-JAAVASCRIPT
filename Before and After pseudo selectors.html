@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after pseudo selectors</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            color: white;
+            background-color: black;
+            font-family: 'Lobster', cursive;
+        }
+        header::before{
+                background: url("https://source.unsplash.com/collection/190727/1600x900") no-repeat center center/cover;
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                opacity: 0.5;
+            }
+        /* section::before{
+            content: "HI";
+        } */
+        section{
+            margin: 3px 150px;
+            display: flex;
+            flex-direction: column;
+            /* border: 2px solid red; */
+            height: 300px;
+            justify-content: center;
+            align-items: center;
+        }
+        .navigation{
+            font-size: 20px;
+            display: flex;
+        }
+        li{
+            list-style: none;
+            margin: 4px;
+            padding: 11px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        a:hover{
+            color: purple;
+        }
+        h2{
+            font-size: 4rem;
+        }
+        p{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item"><a href="#">Home</a></li>
+                <li class="item"><a href="#">About Us</a></li>
+                <li class="item"><a href="#">Services</a></li>
+                <li class="item"><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>Welcome to coding world</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore temporibus quam cum veniam aut obcaecati sint! Saepe aperiam sit magnam error quisquam voluptate mollitia doloremque aut deleniti, esse eveniet veritatis, suscipit, magni explicabo eos dolorem possimus architecto. Accusantium, voluptate ex.</p>
+    </section>
+    <hr>
+</body>
+</html>
