@@ -1,0 +1,99 @@
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar{
+    display: flex;
+    flex-direction: column;
+}
+.navbar .logo img{
+    display: block;
+    margin: auto;
+    margin-top: 6px;
+}
+.navbar ul{
+    display: flex;
+    margin: 3px 2px;
+    padding: 0px 3px;
+    font-size: 0.7rem;
+}
+
+.navbar ul li{
+    padding: 0px;
+}
+.navbar ul a{
+    font-size: 0.9rem;
+}
+/* Home */
+#home{
+    padding: 12px 50px;
+    height: 273px
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 2px 3px 10px black;
+}
+#home p{
+    font-size: 0.76rem;
+}
+#home .btn{
+    padding: 5px;
+    margin: 6px;
+}
+/* Services */
+.services-container{
+    display: flex;
+    /* flex-direction: column; */
+}
+#services{
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.box img {
+    width: 10%;
+    height: 40%;
+}
+.box p{
+    padding: 4px 20px;
+}
+.box .new1{
+    margin-top: 10px;
+}
+.box .new2{
+    margin-top: -7px;
+}
+.box .new3{
+    margin-top: -12px;
+}
+
+/* Clients */
+#clients img {
+    height: 38px;
+    padding: 0px 14px;
+    margin-top: 30px;
+}
+/* Contact us */
+
+/* Footer */
+
+/*Utility */
+
+.h-primary{
+    font-size: 2rem;
+    padding: 6px 2px;
+}
+.h-secondary {
+    font-size: 2.3rem;
+    padding: 6px 2px;
+    font-family: 'Roboto', sans-serif;
+}
