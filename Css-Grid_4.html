@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Grid</title>
+    <style>
+        body {
+            background-color: black;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-areas:
+            "navbar navbar navbar navbar"
+            "section1 section1 section1 section2"
+            "footer footer footer footer";
+            grid-gap: 0.7rem;
+        }
+
+        .item {
+            background-color: rgb(255, 255, 255);
+            padding: 2px;
+            padding: 10px 18px;
+            display: flex;
+        }
+        .navbar{
+            grid-area: navbar;
+        }
+        .section1{
+            grid-area: section1;
+        }
+        .section2{
+            grid-area: section2;
+        }
+        footer{
+            grid-area: footer;
+        }
+        ul li{
+            list-style: none;
+            text-decoration: none;
+            padding: 0px 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        
+        <nav class="navbar">
+            <ul class="item">
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Services</li>
+                <li>Contact Us</li>
+            </ul>
+        </nav>
+
+        <section class="section1 item">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero eveniet autem
+            inventore explicabo molestias impedit excepturi consequatur culpa? Tempora voluptatem ab dolorem possimus
+            odio recusandae nihil laboriosam aspernatur blanditiis ad. Expedita, nobis ipsum! Ratione quod ad illo
+            nostrum iste distinctio doloremque necessitatibus soluta! Tenetur esse beatae cupiditate vero, placeat
+            perspiciatis repellat voluptatem. Possimus officia totam, consectetur et fuga temporibus suscipit.
+        </section>
+
+        <section class="section2 item">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero eveniet autem
+            inventore explicabo molestias impedit excepturi consequatur culpa? Tempora voluptatem ab dolorem possimus
+            odio recusandae nihil laboriosam aspernatur blanditiis ad. Expedita, nobis ipsum! Ratione quod ad illo
+            nostrum iste distinctio doloremque necessitatibus soluta! Tenetur esse beatae cupiditate vero, placeat
+            perspiciatis repellat voluptatem. Possimus officia totam, consectetur et fuga temporibus suscipit.
+        </section>
+
+        <footer class="item">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, architecto.
+        </footer>
+    </div>
+</body>
+
+</html>
