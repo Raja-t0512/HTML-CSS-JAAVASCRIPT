@@ -1,0 +1,80 @@
+/* width:clamp(200px,50%,600px); */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Tinos", serif;
+}
+
+body {
+  background: url("bg2.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.container {
+  /* border: 2px solid white; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 99vh;
+  color: white;
+}
+.container h1 {
+  display: inline-block;
+  width: 21%;
+  font-size: 2.5rem;
+  text-shadow: 1px 1px 10px black;
+  margin-bottom: 30px;
+  border-bottom: 2px solid white;
+}
+.box {
+  width: 20%;
+  height: 8%;
+  /* border: 2px solid red; */
+  justify-content: center;
+  align-items: center;
+}
+
+.box input {
+  /* position: absolute; */
+  width: 85%;
+  background: none;
+  outline: none;
+  border: none;
+  padding: 10px 1px;
+  margin: 10px 8px;
+  border-bottom: 2px solid white;
+}
+.box input::placeholder {
+  color: white;
+  text-shadow: 1px 1px 10px black;
+}
+.box input:active {
+  content-visibility: none;
+}
+
+.box i::after {
+  float: left;
+  height: 30px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid red; */
+}
+.btn {
+  cursor: pointer;
+  background: none;
+  color: white;
+  width: 7%;
+  margin-top: 36px;
+  padding: 6px 9px;
+  border: 1.5px solid white;
+  border-radius: 15px;
+  font-weight: bold;
+}
+.btn:hover {
+  background-color: white;
+  color: black;
+}
